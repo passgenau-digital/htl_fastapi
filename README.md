@@ -25,3 +25,25 @@ To host the slideshow directly in the browser use the `--post serve` parameter:
 ```bash
 jupyter-nbconvert fastapi_tutorial.ipynb --to slides --reveal-prefix reveal.js --post serve
 ```
+
+## demo_fastapi.py
+
+### Server starten
+```bash
+uvicorn demo_fastapi:app --reload
+```
+
+### Endpoint-Docu
+
+1. Server starten
+2. Unter: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) können die Endpoints eingesehen und getestet werden.
+
+
+### Beispiel-Requests:
+```bash
+GET    http://localhost:8000/items
+GET    http://localhost:8000/items/0
+POST   http://localhost:800/items (Body: JSON mit name/price/category)
+PUT    http://localhost:8000/items/0 (Body: aktualisierte Werte)
+DELETE http://localhost:8000/items/0
+```

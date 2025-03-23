@@ -1,5 +1,6 @@
 .venv
 reveal.js
+fastapi_student_project_musterloesung.py
 # Created by https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,macos,venv,jupyternotebooks
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,visualstudiocode,macos,venv,jupyternotebooks
 
